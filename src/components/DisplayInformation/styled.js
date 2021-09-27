@@ -9,8 +9,15 @@ export const DisplayInformationWrapper = styled.div`
   height: 120px;
   display: flex;
   flex-direction: column;
+  letter-spacing: -0.025em;
+  color: #1D2C4B;
 `;
-export const Title = styled.div``;
+export const Title = styled.div`
+  font-family: 'Inter';
+  font-size: 14px;
+  font-weight: 500;
+  color: #1D2C4B;
+`;
 export const Value = styled.div``;
 export const ContentWrapper = styled.div`
   display: flex;

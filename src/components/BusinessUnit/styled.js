@@ -5,6 +5,7 @@ export const BusinessUnitWrapper = styled.div`
   cursor: pointer;
   align-items: center;
   font-family: 'Inter';
+  letter-spacing: -0.025em;
 
   div:first-child {
     margin-right: 6.5px

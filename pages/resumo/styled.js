@@ -5,6 +5,7 @@ export const MainTitle = styled.div`
   font-weight: 600;
   font-size: 24px ;
   margin-bottom: 32px;
+  letter-spacing: -0.025em;
 `
 
 export const SummaryGrid = styled.div`

@@ -10,6 +10,7 @@ export const LeadsChartWrapper = styled.div`
   width: 100% ;
   display: flex;
   flex-direction: column;
+  letter-spacing: -0.025em;
 `;
 
 export const Title = styled.div`
