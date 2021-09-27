@@ -21,6 +21,8 @@
     "paths": {
       "@/assets/*" : ["assets/*"],
       "@/components/*" : ["components/*"],
+      "@/utils/*" : ["utils/*"],
+      "@/*" : ["/*"],
     },
   },
   "include": [

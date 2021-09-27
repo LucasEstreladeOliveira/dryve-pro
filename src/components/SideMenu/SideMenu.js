@@ -3,10 +3,12 @@ import { useState } from 'react'
 import { styled, useTheme } from '@material-ui/core/styles';
 import MuiDrawer from '@material-ui/core/Drawer';
 import Divider from '@material-ui/core/Divider';
+import { useRouter } from "next/router";
 
 // components
 import { ButtonIcon, ButtonList } from '../ButtonIcon/ButtonIcon';
 import Image from 'next/image'
+import Link from 'next/link'
 import { SideMenuButton } from './styled'
 
 // theming
@@ -72,6 +74,7 @@ const DrawerHeader = styled('div')(({ theme }) => ({
 function SideMenu () {
   const theme = useTheme(overrideTheme);
   const [open, setOpen] = useState(false);
+  const router = useRouter();
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -81,6 +84,10 @@ function SideMenu () {
     setOpen(false);
   };
 
+  function handleIcon(state, icon) {    
+    const handledIcon = state ? require(`@/assets/${icon}-white.svg`) : require(`@/assets/${icon}-blue.svg`)
+    return handledIcon 
+  }
   return (
     <Drawer variant="permanent" open={open}>
       <DrawerHeader>
@@ -88,10 +95,12 @@ function SideMenu () {
       <Divider />
       <ButtonList>
         {menuList.map((item, index) => (
-          <ButtonIcon active={item.selected} key={index+item.label} open={open}>
-            <Image src={item.selected ? item.iconActive : item.iconNotActive} alt={item.label} layout="fixed"/>
-            { open ? item.label : ''}
-          </ButtonIcon>
+          <Link href={item.route} key={index+item.label}>
+            <ButtonIcon active={router.pathname.includes(item.route)} open={open}>
+                <Image src={handleIcon(router.pathname.includes(item.route), item.icon)} alt={item.label} layout="fixed"/>
+                { open ? item.label : ''}
+            </ButtonIcon>
+          </Link>
         ))}
       </ButtonList>
       <SideMenuButton open={open}>
