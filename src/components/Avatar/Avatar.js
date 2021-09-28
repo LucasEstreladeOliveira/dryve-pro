@@ -1,7 +1,11 @@
+// vendors
 import Image from 'next/image'
-import avatar from '../../assets/avatar.svg'
-import { AvatarWrapper, OuterCircle, InnerCircle } from './styled'
 
+// assets
+import avatar from '@/assets/avatar.svg'
+
+// styles
+import { AvatarWrapper, OuterCircle, InnerCircle } from './styled'
 
 function Avatar () {
 

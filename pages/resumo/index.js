@@ -3,21 +3,17 @@ import { MainTitle, SummaryGrid, DisplayInfo1, DisplayInfo2, DisplayInfo3, Displ
 import LeadsChart from "@/components/LeadsChart/LeadsChart"
 import LeadsList from "@/components/LeadsList/LeadsList"
 import VehicleList from "@/components/VehicleList/VehicleList"
-import axios from 'axios'
+import { VehiclesContext } from '@/contexts/vehicles-context'
 import dateFormat from '@/utils/dateFormat'
+import { useEffect, useContext } from 'react'
 
-export const getStaticProps = async () => {
+const Resumo = ()  => {
 
-  const { data } = await axios.get("http://www.mocky.io/v2/5eb553df31000060006994a8");
+  const { vehicles, refreshVehicles } = useContext(VehiclesContext)
 
-  return {
-    props: {
-      vehicles: data
-    }
-  }
-}
-
-const Resumo = ({vehicles})  => {
+  useEffect(() => {
+    refreshVehicles()
+  }, [refreshVehicles])
 
   const leads = [
     {label: "OLX", count: 40, icon: "olx"},

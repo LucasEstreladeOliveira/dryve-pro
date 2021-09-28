@@ -1,6 +1,8 @@
+// styles
 import { BankDataWrapper, Title, InputGrid, InputGrid25, InputGrid7525 } from './styled'
+
+// components
 import Input from '@/components/Input/Input'
-// import Select from '@/components/Select/Select'
 
 const Address = ({user}) => {
   return (

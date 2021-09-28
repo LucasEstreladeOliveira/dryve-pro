@@ -1,5 +1,10 @@
+// styles
 import { VehicleInfoWrapper, ImageWrapper, InfoWrapper, Label, Info, Dot, Value } from './styled'
+
+// vendors
 import Image from 'next/image'
+
+// utils
 import moneyFormat from '@/utils/moneyFormat'
 import kilometersFormat from '@/utils/kilometersFormat'
 

@@ -1,9 +1,14 @@
+// vendors
 import MuiAppBar from '@material-ui/core/AppBar';
 import { styled, ThemeProvider } from '@material-ui/core/styles';
-import Logo from '../Logo/Logo'
-import BusinessUnit from '../BusinessUnit/BusinessUnit'
-import MenuOptions from '../MenuOptions/MenuOptions'
-import overrideTheme from '../../theme/overrideTheme'
+
+// components
+import Logo from '@/components/Logo/Logo'
+import BusinessUnit from '@/components/BusinessUnit/BusinessUnit'
+import MenuOptions from '@/components/MenuOptions/MenuOptions'
+
+// theme
+import overrideTheme from '@/theme/overrideTheme'
 
 const drawerWidth = 240;
 

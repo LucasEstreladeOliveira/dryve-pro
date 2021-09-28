@@ -1,6 +1,7 @@
-import { 
-  ContentWrapper,
-} from './styled'
+// styles
+import { ContentWrapper } from './styled'
+
+// components
 import DisplayContent from '@/components/DisplayContent/DisplayContent'
 
 const Adverts = ()  => { 

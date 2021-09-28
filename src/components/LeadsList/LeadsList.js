@@ -1,5 +1,8 @@
+// styles
 import { LeadsListWrapper, Title, ContentWrapper } from './styled'
-import LeadItem from '../LeadItem/LeadItem'
+
+// components
+import LeadItem from '@/components/LeadItem/LeadItem'
 
 function LeadsList ({title, leads}) {
   return (
