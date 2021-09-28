@@ -1,9 +1,10 @@
-import Image from 'next/image'
-import Notification from '../Notification/Notification'
-import { MenuOptionsWrapper } from './styled'
-import Avatar from '../Avatar/Avatar'
-import Settings from '../Settings/Settings'
+// components
+import Notification from '@/components/Notification/Notification'
+import Avatar from '@/components/Avatar/Avatar'
+import Settings from '@/components/Settings/Settings'
 
+// styles
+import { MenuOptionsWrapper } from './styled'
 
 function MenuOptions () {
 

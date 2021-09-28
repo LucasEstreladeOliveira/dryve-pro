@@ -1,4 +1,4 @@
-
+// vendors
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
@@ -6,20 +6,15 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Pagination from '@material-ui/core/Pagination';
-import { UserInitials, Label, UserWrapper, HeadLabel, TableWrapper, FooterWrapper } from './styled.js'
-import RowsPerPage from '../RowsPerPage/RowsPerPage.js';
 import { useRouter } from 'next/router'
 
+// styles
+import { UserInitials, Label, UserWrapper, HeadLabel, TableWrapper, FooterWrapper } from './styled.js'
 
-function firstAndLast(name) {
-  const eachName = name.split(' ');
-  const letterFirstName = eachName[0][0]
-  const letterLastName = eachName[eachName.length - 1][0]
+// components
+import RowsPerPage from '@/components/RowsPerPage/RowsPerPage.js';
 
-  return `${letterFirstName}${letterLastName}`
-}
 const ContactTable = ({users}) => {
-
   const router = useRouter();
 
   return (
@@ -82,6 +77,14 @@ const ContactTable = ({users}) => {
     </FooterWrapper>
   </TableContainer>
   )
+}
+
+function firstAndLast(name) {
+  const eachName = name.split(' ');
+  const letterFirstName = eachName[0][0]
+  const letterLastName = eachName[eachName.length - 1][0]
+
+  return `${letterFirstName}${letterLastName}`
 }
 
 export default ContactTable

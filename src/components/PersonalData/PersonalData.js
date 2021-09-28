@@ -1,7 +1,11 @@
-import { PersonalDataWrapper, Title, InputGrid } from './styled'
-import Input from '@/components/Input/Input'
-// import Select from '@/components/Select/Select'
+// vendors
 import { format, parseISO } from 'date-fns'
+
+// styles
+import { PersonalDataWrapper, Title, InputGrid } from './styled'
+
+// components
+import Input from '@/components/Input/Input'
 
 const PersonalData = ({user}) => {
   return (

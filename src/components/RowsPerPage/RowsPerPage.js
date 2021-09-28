@@ -1,9 +1,11 @@
-import InputLabel from '@material-ui/core/InputLabel';
+// vendors
 import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
-import { RowsPerPageWrapper, Label } from './styled'
 import { useState } from 'react'
+
+// styles
+import { RowsPerPageWrapper, Label } from './styled'
 
 function RowsPerPage({currentNumber, total}) {
 

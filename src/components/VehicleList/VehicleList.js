@@ -1,4 +1,7 @@
+// styles
 import { VehicleListWrapper, ContentWrapper, Title, Divider } from './styled'
+
+// components
 import VehicleItem from "@/components/VehicleItem/VehicleItem"
 function VehicleList ({ vehicles, title }) {
 

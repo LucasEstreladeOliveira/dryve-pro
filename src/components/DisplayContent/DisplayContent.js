@@ -1,9 +1,10 @@
+// styles
 import { DisplayContentWrapper, Title, Divider } from './styled'
 
-const DisplayContent = ({children, title, maxHeight=254, margin}) => {
+const DisplayContent = ({children, title, maxHeight=254}) => {
   return (
-    <DisplayContentWrapper maxHeight={maxHeight}>
-      <Title>{title}</Title>
+    <DisplayContentWrapper data-testid="wrapper" maxHeight={maxHeight}>
+      <Title data-testid="title">{title}</Title>
       <Divider />
       {children}
     </DisplayContentWrapper>

@@ -1,7 +1,11 @@
+// vendors
 import Image from 'next/image'
-import gearIcon from '../../assets/gearIcon.svg'
-import { SettingsWrapper } from './styled'
 
+// assets
+import gearIcon from '@/assets/gearIcon.svg'
+
+// styles
+import { SettingsWrapper } from './styled'
 
 function Settings () {
   return (

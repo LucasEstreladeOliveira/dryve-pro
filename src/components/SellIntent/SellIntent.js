@@ -1,9 +1,14 @@
-import { 
-  ContentWrapper,
-} from './styled'
-import addBlue from '@/assets/add-blue.svg'
-import { ButtonIcon } from '@/components/ButtonIcon/ButtonIcon'
+// vendors
 import Image from 'next/image'
+
+// styles
+import { ContentWrapper } from './styled'
+
+// assets
+import addBlue from '@/assets/add-blue.svg'
+
+// components
+import { ButtonIcon } from '@/components/ButtonIcon/ButtonIcon'
 import DisplayContent from '@/components/DisplayContent/DisplayContent'
 
 const SellIntent = ()  => { 

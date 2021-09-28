@@ -30,8 +30,8 @@ export const ContentWrapper = styled.div`
 `
 
 export const RightGrid = styled.div`
-  display: grid;
-  grid-template-rows: auto auto auto auto;
+  display: flex;
   grid-gap: 16px;
   margin-left: 8px;
+  flex-direction: column;
 `

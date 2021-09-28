@@ -1,6 +1,11 @@
+// vendors
 import Image from 'next/image'
-import houseCircleIcon from '../../assets/houseCircleIcon.svg'
-import arrowDown from '../../assets/arrowDown.svg'
+
+// assets
+import houseCircleIcon from '@/assets/houseCircleIcon.svg'
+import arrowDown from '@/assets/arrowDown.svg'
+
+// styles
 import { BusinessUnitWrapper } from './styled'
 
 

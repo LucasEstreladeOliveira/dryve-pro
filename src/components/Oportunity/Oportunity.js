@@ -1,3 +1,4 @@
+// styles
 import { 
   OportunityWrapper,
   InfoWrapper,
@@ -8,11 +9,16 @@ import {
   LeadWrapper,
   ImageWraper
 } from './styled'
-import Image from 'next/image'
-import moneyFormat from '@/utils/moneyFormat'
-const Oportunity = ({oportunity})  => { 
 
+// vendors
+import Image from 'next/image'
+
+// utils
+import moneyFormat from '@/utils/moneyFormat'
+
+const Oportunity = ({oportunity})  => { 
   const resolvedLeadImg = require(`@/assets/${oportunity?.lead}-logo.svg`)
+  
   return (
       <OportunityWrapper>
         <InfoWrapper>

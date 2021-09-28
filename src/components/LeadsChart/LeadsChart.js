@@ -1,3 +1,4 @@
+// vendors
 import {
   ResponsiveContainer,
   AreaChart,
@@ -7,9 +8,11 @@ import {
   Tooltip,
   CartesianGrid,
 } from 'recharts';
-
 import { format, parseISO, subDays } from "date-fns";
+
+// styles
 import { LeadsChartWrapper, ChartWrapper, Title, Divider } from './styled'
+
 const data = [];
 
 for( let num = 30; num >= 0 ; num--) {
@@ -18,6 +21,7 @@ for( let num = 30; num >= 0 ; num--) {
     value: 1 + Math.floor(Math.random() * ( 50 - 1)) + 1,
   })
 }
+
 function LeadsChart () {
 
   return <LeadsChartWrapper>

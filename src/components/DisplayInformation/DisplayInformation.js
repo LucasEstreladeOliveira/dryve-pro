@@ -1,4 +1,7 @@
+// vendors
 import Image from 'next/image'
+
+// styles
 import { Title, ContentWrapper, Value, DisplayInformationWrapper, ImageWrapper } from './styled'
 
 function DisplayInformation ({title = 'Veículos publicados', value = '26', icon = 'car-blue'}) {  

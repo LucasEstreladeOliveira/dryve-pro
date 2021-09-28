@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import { UsersContext } from '@/store'
+import { UsersContext } from '@/contexts/users-context'
 import { useContext } from 'react'
 import Image from 'next/image'
 import returnIcon from '@/assets/return.svg'

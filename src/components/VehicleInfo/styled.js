@@ -25,6 +25,9 @@ export const Info = styled.div`
   display: flex;
   align-items: center;
   font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 `;
 export const Dot = styled.div`
   width: 3px;
