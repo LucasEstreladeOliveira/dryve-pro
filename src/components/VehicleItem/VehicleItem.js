@@ -1,9 +1,12 @@
+// styles
 import { 
   VehicleItemWrapper, 
   StatusWrapper, 
   Badge, 
   Date 
 } from './styled'
+
+// components
 import VehicleInfo from '@/components/VehicleInfo/VehicleInfo'
 
 function VehicleItem ({ vehicle }) {

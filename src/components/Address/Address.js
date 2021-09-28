@@ -1,14 +1,15 @@
+// styles
 import { AddressWrapper, Title, InputGrid, InputGrid25, InputGrid7525 } from './styled'
+// components
 import Input from '@/components/Input/Input'
-// import Select from '@/components/Select/Select'
 
 const Address = ({user}) => {
   return (
     <AddressWrapper>
       <Title>Endereço</Title>
       
-      <InputGrid25>
-        <Input label="CEP" value={user?.address?.zipcode}/>
+      <InputGrid25 data-testid="cep">
+        <Input label="CEP" value={user?.address?.zipcode} />
       </InputGrid25>
         
       <InputGrid7525>

@@ -1,6 +1,13 @@
+// styles
 import { TagsWrapper, Title } from './styled'
+
+// components
 import { ButtonIcon } from '@/components/ButtonIcon/ButtonIcon'
+
+// vendors
 import Image from 'next/image'
+
+// assets
 import addBlue from '@/assets/add-blue.svg'
 
 const Tags = () => {

@@ -1,5 +1,10 @@
+// vendors
 import Image from 'next/image'
+
+// assets
 import logo from '@/assets/Logo.svg'
+
+// styles
 import { SpinningLogoWrapper, SpinningLogoContent, SpinningLogoSide, SpinningLogoBack } from './styled'
 
 const SpinningLogo = () => {

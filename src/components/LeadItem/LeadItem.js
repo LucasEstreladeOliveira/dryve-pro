@@ -1,4 +1,7 @@
+// vendors
 import Image from 'next/image'
+
+// styles
 import { LeadsItemWrapper, ImageWrapper, Label, Value, Info } from './styled'
 
 function LeadsList ({lead, position}) {

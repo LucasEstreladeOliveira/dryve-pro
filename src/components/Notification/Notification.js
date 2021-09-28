@@ -1,5 +1,10 @@
+// vendors
 import Image from 'next/image'
-import bellIcon from '../../assets/bellIcon.svg'
+
+// assets
+import bellIcon from '@/assets/bellIcon.svg'
+
+// styles
 import { NotificationWrapper, NotificationAlert } from './styled'
 
 

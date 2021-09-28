@@ -1,4 +1,10 @@
-// import Image from 'next/image'
+// vendors
+import FormControl from '@material-ui/core/FormControl'
+import RadioGroup from '@material-ui/core/RadioGroup'
+import Radio from '@material-ui/core/Radio'
+import FormControlLabel from '@material-ui/core/FormControlLabel'
+
+// styles
 import { 
   Divider, 
   EditInformationsWrapper, 
@@ -6,15 +12,13 @@ import {
   TypeUserSelectionWrapper, 
   FooterWrapper,
 } from './styled'
+
+// components
 import Button from '@/components/Button/Button'
 import PersonalData from '@/components/PersonalData/PersonalData'
 import Address from '@/components/Address/Address'
 import Tags from '@/components/Tags/Tags'
 import BankData from '@/components/BankData/BankData'
-import FormControl from '@material-ui/core/FormControl'
-import RadioGroup from '@material-ui/core/RadioGroup'
-import Radio from '@material-ui/core/Radio'
-import FormControlLabel from '@material-ui/core/FormControlLabel'
 
 const EditInformations = ({user})  => { 
   return (

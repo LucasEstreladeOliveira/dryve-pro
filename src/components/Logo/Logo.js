@@ -1,7 +1,12 @@
+// vendors
 import Image from 'next/image'
-import logo from '@/assets/Logo.svg'
-import { ImageWrapper } from './styled'
 import Link from 'next/link'
+
+// assets
+import logo from '@/assets/Logo.svg'
+
+// styles
+import { ImageWrapper } from './styled'
 
 
 function Logo () {

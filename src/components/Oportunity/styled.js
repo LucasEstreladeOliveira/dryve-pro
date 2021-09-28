@@ -19,10 +19,10 @@ export const Name = styled.div`
   line-height: 12px;
   letter-spacing: -0.025em;
   color: #1D2C4B;
-  `;
+`;
 export const Info = styled.div`
   display: flex;
-  `;
+`;
 export const Label = styled.div`
   font-family: Inter;
   font-weight: 600;

@@ -5,7 +5,7 @@ import Image from 'next/image'
 import filter from '@/assets/filter.svg'
 import add from '@/assets/add.svg'
 import ContactTable from '@/components/ContactTable/ContactTable'
-import { UsersContext } from '@/store'
+import { UsersContext } from '@/contexts/users-context'
 import { useEffect, useContext } from 'react'
 
 const Contatos = ()  => {
@@ -14,7 +14,7 @@ const Contatos = ()  => {
 
   useEffect(() => {
     refreshUsers()
-  }, [])
+  }, [refreshUsers])
 
   return (
     <>

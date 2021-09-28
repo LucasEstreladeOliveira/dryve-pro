@@ -6,20 +6,20 @@ import Divider from '@material-ui/core/Divider';
 import { useRouter } from "next/router";
 
 // components
-import { ButtonIcon, ButtonList } from '../ButtonIcon/ButtonIcon';
+import { ButtonIcon, ButtonList } from '@/components/ButtonIcon/ButtonIcon';
 import Image from 'next/image'
 import Link from 'next/link'
 import { SideMenuButton } from './styled'
 
 // theming
-import overrideTheme from '../../theme/overrideTheme'
+import overrideTheme from '@/theme/overrideTheme'
 
 // assets
-import leftArrow from '../../assets/left-arrow.svg'
-import rightArrow from '../../assets/right-arrow.svg'
+import leftArrow from '@/assets/left-arrow.svg'
+import rightArrow from '@/assets/right-arrow.svg'
 
 // utils
-import menuList from '../../utils/menuList'
+import menuList from '@/utils/menuList'
 
 const drawerWidth = 240;
 
