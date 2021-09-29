@@ -1,4 +1,4 @@
-import { MainTitle, ButtonGroup, HeadWrapper } from './styled'
+import { MainTitle, ButtonGroup, HeadWrapper } from '@/styles/styledContacts'
 import { ButtonIcon } from '@/components/ButtonIcon/ButtonIcon'
 import Input from '@/components/Input/Input';
 import Image from 'next/image'

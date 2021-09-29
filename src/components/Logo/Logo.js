@@ -12,7 +12,7 @@ import { ImageWrapper } from './styled'
 function Logo () {
 
   return (
-    <Link href="/resumo">
+    <Link href="/resumo" passHref={true}>
       <ImageWrapper>
         <Image src={logo} alt="dryve-pro" layout="fixed"/>
       </ImageWrapper>
