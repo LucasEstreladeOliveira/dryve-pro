@@ -36,10 +36,10 @@ const Oportunity = ({oportunity})  => {
         </InfoWrapper>
         <LeadWrapper>
           <ImageWraper lead>
-            <Image src={resolvedLeadImg} layout="fill" />
+            <Image src={resolvedLeadImg} layout="fill" alt="logo"/>
           </ImageWraper>
           <ImageWraper>
-            <Image src={oportunity.image} layout="fill" />
+            <Image src={oportunity.image} layout="fill" alt="vehicle"/>
           </ImageWraper>
         </LeadWrapper>
       </OportunityWrapper>

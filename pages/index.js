@@ -8,7 +8,7 @@ export default function Home() {
 
   useEffect(() => {
     router.push('/resumo');
-  }, [])
+  }, [router])
 
   return (
     <SpinningLogo />

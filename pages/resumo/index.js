@@ -1,5 +1,5 @@
 import DisplayInformation from '@/components/DisplayInformation/DisplayInformation'
-import { MainTitle, SummaryGrid, DisplayInfo1, DisplayInfo2, DisplayInfo3, DisplayInfo4, Chart, Leads, TDV, TDD } from './styled'
+import { MainTitle, SummaryGrid, DisplayInfo1, DisplayInfo2, DisplayInfo3, DisplayInfo4, Chart, Leads, TDV, TDD } from '@/styles/styledSummary'
 import LeadsChart from "@/components/LeadsChart/LeadsChart"
 import LeadsList from "@/components/LeadsList/LeadsList"
 import VehicleList from "@/components/VehicleList/VehicleList"

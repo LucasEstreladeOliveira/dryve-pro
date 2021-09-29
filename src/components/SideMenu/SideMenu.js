@@ -95,7 +95,7 @@ function SideMenu () {
       <Divider />
       <ButtonList>
         {menuList.map((item, index) => (
-          <Link href={item.route} key={index+item.label}>
+          <Link href={item.route} key={index+item.label} passHref={true}>
             <ButtonIcon active={router.pathname.includes(item.route)} open={open}>
                 <Image src={handleIcon(router.pathname.includes(item.route), item.icon)} alt={item.label} layout="fixed"/>
                 { open ? item.label : ''}
